@@ -34,6 +34,7 @@ const Detail = (props) => {
           <span>{bookObj.publisher}</span>
           <span>{bookObj.publishDt}</span>
         </div>
+
         <div className="d-price">{bookObj.price}원</div>
       </div>
 
@@ -43,7 +44,6 @@ const Detail = (props) => {
           className="d-contentTitle"
           dangerouslySetInnerHTML={{ __html: bookObj.contentTitle }}
         ></p>
-        {/* <div className="d-line"></div> */}
         <div>
           <img
             src={`http://192.168.0.183:9988${bookObj.detailImageUri}`}
